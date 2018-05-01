@@ -1,0 +1,12 @@
+#!/bin/bash
+
+database="$1"
+command="$2"
+shift 2
+
+for i in `seq $#`
+do
+  export "a$i=${!i}"
+done
+
+sqlite3 "$database" ".echo on" "`envsubst < scripts/$command.sql`"
