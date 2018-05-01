@@ -11,5 +11,7 @@ done
 
 sqlite3 "$database" \
         "PRAGMA foreign_keys = ON;" \
+        ".mode column" \
+        ".headers on" \
         ".echo on" \
         "`envsubst < scripts/$command.sql`"
