@@ -1,6 +1,6 @@
 # geek-workout
 
-This is a demo application which uses Bash and SQLite for keeping records of your activities
+This is a simple application which uses Bash and SQLite for keeping records of your activities. It has been made for didactical purposes.
 
 ## Initialization
 
