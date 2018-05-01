@@ -8,8 +8,8 @@ This is a demo application which uses Bash and SQLite for keeping records of you
 
 ## Add activity
 
-`$ ./workout log.db activity-new bike km "regular bike"`
+`$ ./workout log.db new-activity bike km "regular bike"`
 
 ## Add event
 
-`$ ./workout log.db event-new bike 73.2 "long trip"`
+`$ ./workout log.db new-event bike 73.2 "long trip"`
