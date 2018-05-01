@@ -16,4 +16,10 @@ This is a simple application which uses Bash and SQLite for keeping records of y
 
 ## Show statistics
 
+Grouped by activity:
+
 `$ ./workout log.db stats`
+
+Grouped by activity and week number:
+
+`$ ./workout log.db stats-weekly`
