@@ -9,4 +9,7 @@ do
   export "a$i=${!i}"
 done
 
-sqlite3 "$database" ".echo on" "`envsubst < scripts/$command.sql`"
+sqlite3 "$database" \
+        "PRAGMA foreign_keys = ON;" \
+        ".echo on" \
+        "`envsubst < scripts/$command.sql`"
