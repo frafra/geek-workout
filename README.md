@@ -13,3 +13,7 @@ This is a demo application which uses Bash and SQLite for keeping records of you
 ## Add event
 
 `$ ./workout log.db new-event bike 73.2 "long trip"`
+
+## Show statistics
+
+`$ ./workout log.db stats`
